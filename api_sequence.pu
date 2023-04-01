@@ -1,6 +1,12 @@
 @startuml storj cli
 participant MobileApp as mobile_app
+activate mobile_app
 mobile_app -> storj: Authentication request
-storj -> mobile_app: Authentication Response
+activate storj
+return response
+
+mobile_app -> storj: upload file
+activate storj
+return response
 
 @enduml
