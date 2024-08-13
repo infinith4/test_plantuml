@@ -1,4 +1,4 @@
-@startuml storj cli
+@startuml storjcli
 participant MobileApp as mobile_app
 activate mobile_app
 mobile_app -> storj: Authentication request
